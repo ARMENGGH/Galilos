@@ -215,3 +215,202 @@ margin-top:15px;
 
 
 }
+
+/* 🌌 Page entrance */
+
+body{
+    animation: pageEnter 1.5s ease;
+}
+
+
+@keyframes pageEnter{
+
+from{
+    opacity:0;
+    filter:blur(10px);
+}
+
+to{
+    opacity:1;
+    filter:blur(0);
+}
+
+}
+
+
+
+/* 💌 Romantic cards animation */
+
+.card,
+.polaroid{
+
+animation:floatCard 4s ease-in-out infinite;
+
+}
+
+
+@keyframes floatCard{
+
+0%,100%{
+    transform:translateY(0);
+}
+
+50%{
+    transform:translateY(-12px);
+}
+
+}
+
+
+
+/* 🦋 Butterfly animation */
+
+.butterfly{
+
+position:absolute;
+
+font-size:35px;
+
+animation: butterflyMove 12s linear infinite;
+
+}
+
+
+@keyframes butterflyMove{
+
+
+0%{
+
+transform:
+translateY(100vh)
+translateX(0)
+rotate(0deg);
+
+opacity:0;
+
+}
+
+
+20%{
+
+opacity:1;
+
+}
+
+
+50%{
+
+transform:
+translateY(40vh)
+translateX(80px)
+rotate(180deg);
+
+}
+
+
+100%{
+
+transform:
+translateY(-120vh)
+translateX(-80px)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+
+/* ⭐ Shooting stars */
+
+
+.shooting-star{
+
+position:absolute;
+
+width:120px;
+
+height:2px;
+
+background:white;
+
+transform:rotate(-45deg);
+
+
+animation:shoot 4s linear infinite;
+
+}
+
+
+
+@keyframes shoot{
+
+
+0%{
+
+right:-150px;
+
+top:20%;
+
+opacity:1;
+
+}
+
+
+100%{
+
+right:120%;
+
+top:80%;
+
+opacity:0;
+
+}
+
+}
+
+
+
+
+/* ✨ Sparkles */
+
+
+.sparkle{
+
+
+position:absolute;
+
+font-size:20px;
+
+
+animation:sparkle 2s infinite;
+
+}
+
+
+
+@keyframes sparkle{
+
+
+0%,100%{
+
+opacity:.2;
+
+transform:scale(.5);
+
+}
+
+
+50%{
+
+opacity:1;
+
+transform:scale(1.5);
+
+}
+
+}
