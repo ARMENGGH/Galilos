@@ -158,3 +158,38 @@ document.body.appendChild(sparkle);
 
 
 }
+
+
+
+
+
+
+
+document.addEventListener("click",function(e){
+
+let heart=document.createElement("div");
+
+heart.innerHTML="💖";
+
+heart.style.position="absolute";
+
+heart.style.left=e.clientX+"px";
+
+heart.style.top=e.clientY+"px";
+
+heart.style.fontSize="25px";
+
+heart.style.animation="float 2s forwards";
+
+
+document.body.appendChild(heart);
+
+
+setTimeout(()=>{
+
+heart.remove();
+
+},2000);
+
+
+});
