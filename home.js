@@ -1,6 +1,29 @@
 function openMemories(){
 
+
+let transition=document.getElementById("bookTransition");
+
+
+transition.style.display="flex";
+
+
+let book=document.querySelector(".book");
+
+
+book.classList.add("open");
+
+
+
+// wait for animation
+
+setTimeout(()=>{
+
+
 window.location.href="memories.html";
+
+
+},1500);
+
 
 }
 
