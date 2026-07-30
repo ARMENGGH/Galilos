@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Memories ❤️</title>
+
+<link rel="stylesheet" href="memories.css">
+
+</head>
+
+
+<body>
+
+
+<h1>
+📸 Our Little Memories 🌌
+</h1>
+
+
+<p class="subtitle">
+Every picture is a piece of our story ❤️
+</p>
+
+
+
+<div class="gallery">
+
+
+<div class="polaroid rotate1" onclick="openVideo('videos/memory1.mp4')">
+
+<img src="images/photo1.jpg">
+
+<p>
+Our first moments ❤️
+</p>
+
+</div>
+
+
+
+<div class="polaroid rotate2" onclick="openVideo('videos/memory2.mp4')">
+
+<img src="images/photo2.jpg">
+
+<p>
+A memory I keep forever 💙
+</p>
+
+</div>
+
+
+
+<div class="polaroid rotate3" onclick="showMessage()">
+
+<img src="images/photo3.jpg">
+
+<p>
+Click me ✨
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<div id="videoBox">
+
+
+<video id="memoryVideo" controls>
+
+<source id="videoSource">
+
+</video>
+
+
+<button onclick="closeVideo()">
+Close 💕
+</button>
+
+
+</div>
+
+
+
+
+
+<div id="messageBox">
+
+
+<h2>
+💌 Secret message
+</h2>
+
+
+<p>
+You are my favorite chapter of my life ❤️
+</p>
+
+
+<button onclick="closeMessage()">
+Close
+</button>
+
+
+</div>
+
+
+
+
+
+<script src="memories.js"></script>
+
+
+</body>
+
+</html>
