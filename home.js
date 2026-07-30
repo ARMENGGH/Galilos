@@ -210,7 +210,7 @@ window.location.href="letters.html";
 }
 
 
-const startDate = new Date("2025-07-25T00:00:00");
+const startDate = new Date("2026-06-11T00:00:00");
 
 
 function updateLoveTime(){
