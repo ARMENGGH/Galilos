@@ -200,3 +200,11 @@ heart.remove();
 
 
 });
+
+
+
+function openLetters(){
+
+window.location.href="letters.html";
+
+}
