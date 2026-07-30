@@ -208,3 +208,68 @@ function openLetters(){
 window.location.href="letters.html";
 
 }
+
+
+const startDate = new Date("2025-07-25T00:00:00");
+
+
+function updateLoveTime(){
+
+
+const now = new Date();
+
+
+const difference = now - startDate;
+
+
+
+const secondsTotal = Math.floor(
+difference / 1000
+);
+
+
+
+const days = Math.floor(
+secondsTotal / (60*60*24)
+);
+
+
+
+const hours = Math.floor(
+(secondsTotal % (60*60*24)) / (60*60)
+);
+
+
+
+const minutes = Math.floor(
+(secondsTotal % (60*60)) / 60
+);
+
+
+
+const seconds = 
+secondsTotal % 60;
+
+
+
+document.getElementById("days").innerHTML = days;
+
+
+document.getElementById("hours").innerHTML = hours;
+
+
+document.getElementById("minutes").innerHTML = minutes;
+
+
+document.getElementById("seconds").innerHTML = seconds;
+
+
+
+}
+
+
+
+setInterval(updateLoveTime,1000);
+
+
+updateLoveTime();
